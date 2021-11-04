@@ -21,6 +21,10 @@ Route::get('/', function () {
 
 //Route::get('/test1', 'TestsController@one');
 
+Route::get('/tailwind', function () {
+    return view('tailwind');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
