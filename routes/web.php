@@ -25,6 +25,11 @@ Route::get('/tailwind', function () {
     return view('tailwind');
 });
 
+Route::get('/livewire', function () {
+    return view('livewire');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
