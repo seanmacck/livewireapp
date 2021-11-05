@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TestsController;
+use App\Http\Livewire\ShowPosts;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,11 @@ Route::get('/tailwind', function () {
 Route::get('/livewire', function () {
     return view('livewire');
 });
+
+Route::get('/post/{post}', [App\Http\Livewire\ShowPosts::class, '__invoke']);
+
+
+
 
 
 Auth::routes();

@@ -1,3 +1,5 @@
 <div>
-    {{-- If your happiness depends on money, you will never be happy with yourself. --}}
+    {{ $activeMessage }}
+
+    <button class="px-3 py-2 text-white bg-orange-500 rounded" wire:click="getNewMessage">New Message<button>
 </div>
