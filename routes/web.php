@@ -30,6 +30,10 @@ Route::get('/livewire', function () {
     return view('livewire');
 });
 
+Route::get('/tailwind2', function () {
+    return view('tailwind2');
+});
+
 Route::get('/post/{post}', [App\Http\Livewire\ShowPosts::class, '__invoke']);
 
 
