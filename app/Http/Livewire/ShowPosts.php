@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Model\Post;
+use App\Models\Post as ModelsPost;
 
 class ShowPosts extends Component
 {
