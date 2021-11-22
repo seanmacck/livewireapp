@@ -39,8 +39,7 @@ Route::get('/livewire', function () {
 //});
 
 Route::get('/livewire-page', [App\Http\Livewire\LivewirePage::class, '__invoke']);
-
-
+Route::get('/sections', [App\Http\Livewire\Sections::class, '__invoke'])->name('sections');
 
 Route::get('/post/{post}', [App\Http\Livewire\ShowPosts::class, '__invoke']);
 

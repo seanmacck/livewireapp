@@ -7,16 +7,17 @@ use Illuminate\Support\Facades\Http;
 
 class LivewirePage extends Component
 {
-    public $showKanyeQuotes = false;
-    public $showWomenText = false;
-    public $showMenText = false;
-    public $showCompanyText = false;
     public $showQuote = false;
-    public $showDiv = false;
+    public $section = 'home';
 
     public function render()
     {
         return view('livewire.livewire-page')->extends('layouts.tailwind');
+    }
+
+    public function mount()
+    {
+        $this->section = 'home';
 
     }
 
