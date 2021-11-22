@@ -1,6 +1,6 @@
 <div class="bg-white">
     <div class="flex items-center"></div>
-    <p class="p-1 text-center break-normal align-middle rounded bg-grey-400">Women</p>
+    <p class="p-1 text-center break-normal align-middle rounded bg-grey-400">Men</p>
 
 <div class="flex items-start justify-center min-h-screen bg-white-400">
     <div class="grid grid-cols-1 text-center md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-15">
@@ -52,5 +52,3 @@
     </div>
 </div>
 </div>
-
-

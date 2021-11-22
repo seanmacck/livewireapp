@@ -15,6 +15,7 @@ class Search extends Component
 
     public function searchBtn ()
     {
+        $this->emit('searchBtnWasClicked');
 
     }
 }

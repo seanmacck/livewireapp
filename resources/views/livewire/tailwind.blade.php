@@ -1,6 +1,11 @@
-<div class="bg-white">
-    <div class="flex items-center"></div>
-    <p class="p-1 text-center break-normal align-middle rounded bg-grey-400">Women</p>
+<div>
+@extends('layouts.tailwind')
+
+@section('content')
+
+<div class="flex items-center"></div>
+    <h1 class="flex items-center justify-center p-4 text-3xl font-bold rounded bg-bhite">All-in-one platform</h1>
+    <p class="p-1 text-center break-normal align-middle rounded bg-grey-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
 <div class="flex items-start justify-center min-h-screen bg-white-400">
     <div class="grid grid-cols-1 text-center md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-15">
@@ -47,10 +52,9 @@
         </div>
 
 
-
-
     </div>
 </div>
+
+
+@endsection
 </div>
-
-

@@ -12,7 +12,7 @@ class ShowPosts extends Component
 
     public $post;
 
-    public function mount($post)
+    public function mount( Post $post)
     {
         $this->post = $post;
     }

@@ -2,13 +2,12 @@
 
 @section('content')
 
-<h2>Livewire one</h2>
+<h2 class="text-white-200">Livewire one</h2>
 
 <livewire:search/>
 
 <livewire:show-posts :post="1"/>
-<livewire:show-posts :post="2"/>
-<livewire:show-posts :post="3"/>
+
 <livewire:first-component/>
 
 

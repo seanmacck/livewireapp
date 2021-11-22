@@ -7,7 +7,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    <livewire:styles/>
+    <livewire:scripts/>
 
+    <script src="{{ asset('js/app.js') }}"></script>
     <!-- Styles -->
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
