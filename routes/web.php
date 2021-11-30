@@ -39,7 +39,7 @@ Route::get('/livewire', function () {
 //});
 
 Route::get('/livewire-page', [App\Http\Livewire\LivewirePage::class, '__invoke']);
-Route::get('/sections', [App\Http\Livewire\Sections::class, '__invoke'])->name('sections');
+
 
 Route::get('/post/{post}', [App\Http\Livewire\ShowPosts::class, '__invoke']);
 
@@ -48,6 +48,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::middleware(['auth'])->group(function() {
+    //Route::get('/stories', [App\Http\Controllers\StoriesController::class, 'index'])->name('stories.index');
+    //Route::get('/stories/{story}', [App\Http\Controllers\StoriesController::class, 'show'])->name('stories.show');
+      Route::resource('stories', StoriesController::class);
+});
 
 Route::get("kanye", [\App\Http\Livewire\LivewirePage::class, 'index']);
 
